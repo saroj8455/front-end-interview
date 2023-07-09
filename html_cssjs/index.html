@@ -4,9 +4,55 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Day 1 #code challange</title>
+  <title>Day 1 #code challange(html and css)</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+    #box-1 {
+      background-color: rebeccapurple;
+      min-height: 450px;
+
+      background: url('./image/image_1.jpg') no-repeat center center;
+      /* background-attachment: fixed; */
+      /* fill the image entire div */
+      background-size: cover;
+
+      /* align all item to center */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      /* border-radius: 50%; */
+    }
+    .box-content {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: #fff;
+      padding: 30px 30px;
+    }
+    .box-content p {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: medium;
+    }
+  </style>
 </head>
 <body>
-  <h1>ChatGPT</h1>
+  <div id="box-1">
+    <div class="box-content">
+      <h1>Box One</h1>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora explicabo perferendis dolores quos ad obcaecati! Sed, et, laboriosam dolores alias dolore quibusdam eum quasi voluptates molestias deserunt, assumenda sint nesciunt.</p>
+    </div>
+  </div>
 </body>
 </html>

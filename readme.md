@@ -8,3 +8,7 @@ https://codedamn.com/
 https://medium.com/
 https://academind.com/ (premium aws, react)
 https://learn.codevolution.dev/ ( premium javascript question )
+
+
+## day -1 css background
+![Alt text](image.png)
