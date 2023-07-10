@@ -12,3 +12,6 @@ https://learn.codevolution.dev/ ( premium javascript question )
 
 ## day -1 css background
 ![Alt text](image.png)
+
+## day -2 css position (static,relative,absolute,fixed)
+![Alt text](image-1.png)
