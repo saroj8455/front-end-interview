@@ -15,3 +15,7 @@ https://learn.codevolution.dev/ ( premium javascript question )
 
 ## day -2 css position (static,relative,absolute,fixed)
 ![Alt text](image-1.png)
+
+## day -3 link and button
+
+![link and button](image-2.png)
