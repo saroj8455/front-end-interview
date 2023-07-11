@@ -1,97 +1,97 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Day 2 css codeing challenge</title>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet">
 
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Day 2 css codeing challenge</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-      }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
 
+    }
 
-      .box {
-        width: 50%;
-        height: 100px;
-        background-color: yellow;
-        border: 2px solid red;
-        margin: 5px;
-      }
-      .container {
-        max-width: 80%;
-        height: 100vh;
-        margin: 20px auto;
-        border: 2px solid green;
-        padding: 15px;
-        position: relative;
-      }
-      /* difference between static,relative,absolute and fixed */
-      .one {
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        /* make center of the bottom params y Axis params x Axis */
-        transform: translate(-50%,0);
-      }
+    .box {
+      width: 50%;
+      height: 100px;
+      background-color: yellow;
+      border: 2px solid red;
+      margin: 5px;
+    }
 
-      .two {
-        padding: 5px;
-        border-radius: 5px;
-        position: fixed;
-        top: 50%;
-        transform: translate(0,-50%);
+    .container {
+      max-width: 80%;
+      height: 100vh;
+      margin: 20px auto;
+      border: 2px solid green;
+      padding: 15px;
+      position: relative;
+    }
 
-      }
+    /* difference between static,relative,absolute and fixed */
+    .one {
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      /* make center of the bottom params y Axis params x Axis */
+      transform: translate(-50%, 0);
+    }
 
-      .three {
-        position: relative;
-        left: 50%;
-        top: 5%;
-        padding:15px;
-        transform: translate(-50%, -50%);
-        text-align: center;
-        /* right: 50%;
+    .two {
+      padding: 5px;
+      border-radius: 5px;
+      position: fixed;
+      top: 50%;
+      transform: translate(0, -50%);
+
+    }
+
+    .three {
+      position: relative;
+      left: 50%;
+      top: 5%;
+      padding: 15px;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      /* right: 50%;
         bottom: 80%;
         transform: translate(-50%,-80%); */
 
-      }
-      .social-media {
-        width: 30%;
-        height: 100%;
-        color: rgb(1, 54, 153);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 15px;
+    }
 
-      }
+    .social-media {
+      width: 30%;
+      height: 100%;
+      color: rgb(1, 54, 153);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
 
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <div class="box one">One <span class="material-symbols-outlined">
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="box one">One <span class="material-symbols-outlined">
         home
-        </span></div>
-
-      <div class="box two">
-        <div class="social-media">
-          <span class="material-icons">home</span>
-          <span class="material-icons">face</span>
-          <span class="material-icons">
-            account_circle
-            </span>
-        </div>
+      </span></div>
+    <div class="box two">
+      <div class="social-media">
+        <span class="material-icons">home</span>
+        <span class="material-icons">face</span>
+        <span class="material-icons">
+          account_circle
+        </span>
       </div>
-
-      <div class="box three">Three</div>
-
     </div>
-  </body>
+    <div class="box three">Three</div>
+  </div>
+</body>
+
 </html>
