@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 4 CSS Grid Layout</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+    color: red;
+  }
+  body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    font-size: 1.5rem;
+  }
+  .text-center {
+    text-align: center;
+  }
+  .container {
+    width: 80%;
+    margin: 20px auto;
+  }
+  /* design grid layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    gap: 20px;
+  }
+  .item {
+    background-color: #ddd;
+    padding: 20px;
+    min-height: 300px;
+    color: #fff;
+    font-size: 4rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../image/image_02.jpeg') no-repeat center center/cover;
+  }
+  /* fix an image inside a div */
+  .image-grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+  }
+  .box {
+    min-height: 250px;
+    flex-basis: 30%;
+    border: 2px solid red;
+    border-radius: 100%;
+    padding: 15px;
+    position: relative;
+  }
+  .box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+</style>
+</head>
+<body>
+<h1 class="text-center">Day 3 # code challenge</h1>
+<div class="container">
+<div class="grid-container">
+  <div class="item">
+    <p>Image 1</p>
+  </div>
+  <div class="item">
+    <p>Image 2</p>
+  </div>
+  <div class="item">
+    <p>Image 3</p>
+  </div>
+  <div class="item">
+    <p>Image 4</p>
+  </div>
+  <div class="item">
+    <p>Image 5</p>
+  </div>
+  <div class="item">
+    <p>Image 6</p>
+  </div>
+</div>
+<div class="container">
+  <h1 class="text-center">Fix an Image inside a div</h1>
+  <div class="image-grid">
+    <div class="box">
+      <img src="../image/image_1.jpg" alt="">
+    </div>
+    <div class="box">
+      <img src="../image/image_1.jpg" alt="">
+    </div>
+    <div class="box">
+      <img src="../image/image_1.jpg" alt="">
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
