@@ -24,3 +24,6 @@ https://codedamn.com/ (premium for front-end dev)
 ## day -4 grid,flex,flex-basis and image
 ![Alt text](image-3.png)
 here fix an image inside a div
+
+## day -5 grid brush up and created testimonials
+![Alt text](image-4.png)
