@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>grid brush up</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.5;
+      }
+      /* implement grid layout */
+      .parent {
+        padding: 20px;
+        margin: 15px;
+        /* grid properties */
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 15px;
+
+      }
+      .item {
+        background-color: rgb(228, 228, 228);
+        padding: 20px;
+        font-size: 0.77rem;
+        line-height: 1.7;
+      }
+      .item:nth-child(1) {
+        font-size: 1,1rem;
+        grid-row: span 2;
+        /* grid properties for child properties to center */
+        /* align-self: center; */
+        /* center the content inside grid */
+        display: grid;
+        align-content: center;
+      }
+      /* easy centering using grid */
+      .hello__banner {
+        max-width: 80%;
+        height: 300px;
+        background-color: rgb(222, 222, 222);
+        margin: 0 auto 20px auto;
+        border-radius: 4px;
+        /* easy center grid properties */
+        display: grid;
+      }
+      .center__me {
+        color: rgb(113, 113, 175);
+        font-size: 3rem;
+        padding: 15px;
+        /* easy center for child grid properties */
+        margin: auto;
+      }
+
+      @media(max-width:768px) {
+        .parent {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Day #7 code challenge</h1>
+    <section class="parent">
+      <div class="item">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio illum
+        aperiam sunt recusandae consequatur, similique repudiandae reiciendis
+        iure. Aut magni similique tenetur temporibus quas, facilis dolorum
+        officia cum doloremque hic!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque
+        numquam reiciendis, repellat possimus nulla non atque amet accusantium,
+        enim eaque? Reprehenderit quaerat iusto maiores, doloribus pariatur
+        eveniet ratione laboriosam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio illum
+        aperiam sunt recusandae consequatur, similique repudiandae reiciendis
+        iure. Aut magni similique tenetur temporibus quas, facilis dolorum
+        officia cum doloremque hic!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque
+        numquam reiciendis, repellat possimus nulla non atque amet accusantium,
+        enim eaque? Reprehenderit quaerat iusto maiores, doloribus pariatur
+        eveniet ratione laboriosam!
+      </div>
+      <div class="item">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt itaque
+        numquam reiciendis, repellat possimus nulla non atque amet accusantium,
+        enim eaque? Reprehenderit quaerat iusto maiores, doloribus pariatur
+        eveniet ratione laboriosam!
+      </div>
+    </section>
+    <!-- easy centering vertically and horizontal -->
+    <section class="hello__banner">
+      <h1 class="center__me">Hello World... Easy Center</h1>
+    </section>
+  </body>
+</html>

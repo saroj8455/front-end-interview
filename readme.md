@@ -30,3 +30,6 @@ here fix an image inside a div
 
 ## day -6 inline vs block and  display-inline
 ![Alt text](image-5.png)
+
+## day -7 grid easy center, center align child element and content
+![Alt text](image-6.png)
