@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline vs Display-Inline</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        font-family: 'Noto Sans', sans-serif;
+        line-height: 1.6;
+        font-size: 1.5rem;
+      }
+      .container {
+        max-width: 80%;
+        margin: 20px auto;
+      }
+      a {
+        text-decoration: none;
+        color: red;
+        cursor: pointer;
+      }
+      img {
+        height: 150px;
+        width: 150px;
+        border: 2px solid red;
+        border-radius: 4px;
+        display: block;
+        margin: auto;
+        padding: 15px;
+      }
+      .box {
+        height: 200px;
+        max-width: 30%;
+        background-color: #ccc;
+        border-radius: 5px;
+        margin: 5px;
+        padding: 15px;
+        color: #fff;
+        display: inline-block;
+      }
+      /* brush up inline, block, display-inline */
+      ul li {
+        display: inline;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Day 6#code challenge</h1>
+
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#product">Product</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <img src="../image/onion_img.webp" alt="" srcset="" />
+      <img src="../image/springOnion.png" alt="" srcset="" />
+      <section>
+        <div class="box">
+          <h1>Javascript</h1>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </div>
+        <div class="box">
+          <h1>Node Js</h1>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </div>
+        <div class="box">
+          <h1>React Js</h1>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
