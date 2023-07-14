@@ -27,3 +27,6 @@ here fix an image inside a div
 
 ## day -5 grid brush up and created testimonials
 ![Alt text](image-4.png)
+
+## day -6 inline vs block and  display-inline
+![Alt text](image-5.png)
