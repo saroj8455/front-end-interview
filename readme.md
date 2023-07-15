@@ -33,3 +33,6 @@ here fix an image inside a div
 
 ## day -7 grid easy center, center align child element and content
 ![Alt text](image-6.png)
+
+## day -8 manualy place the items using grid and avoid extra inner div to cebter element
+![Alt text](image-7.png)
