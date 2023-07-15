@@ -36,3 +36,9 @@ here fix an image inside a div
 
 ## day -8 manualy place the items using grid and avoid extra inner div to cebter element
 ![Alt text](image-7.png)
+
+## day -9 layout and brush up on grid
+![Alt text](image-8.png)
+
+## day -10 layout and grid and place items to center
+![Alt text](image-9.png)
