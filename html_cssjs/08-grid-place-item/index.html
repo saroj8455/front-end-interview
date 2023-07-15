@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Day 8 #code manualy place item GRID</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      height: 100vh;
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 1.6;
+    }
+    .photo-example {
+      max-width: 900px;
+      margin: 20px auto;
+      display: grid;
+    }
+    .photo-example img {
+      grid-column: 1;
+      grid-row: 1;
+      max-width: 100%;
+      display: block;
+      border-radius: 4px;
+    }
+    .overlay-text {
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.308);
+      padding: 20px;
+      font-size: 1.5rem;
+      font-weight: bold;
+      line-height: 1.7;
+      border-radius: 4px;
+      grid-column: 1;
+      grid-row: 1;
+      align-self: end;
+    }
+    /* avoid extra wrapper */
+    .full-width-example {
+      background-color: rgb(255, 211, 130);
+      color: rgb(112, 86, 38);
+      line-height: 1.7;
+      padding: 20px;
+      /* grid properties */
+      display: grid;
+      /* it will appear horizontal scrool bar */
+      /* grid-template-columns: 900px; */
+      /* avoid horizontal scrool bar */
+      grid-template-columns: minmax(auto,900px);
+      justify-content: center;
+    }
+    .text-center {
+      text-align: center;
+      border-bottom: 5px solid red;
+    }
+  </style>
+</head>
+<body>
+<h1 class="text-center">Manuly place item in grid</h1>
+<div class="photo-example">
+  <img src="../image/image_02.jpeg" alt="" srcset="">
+  <div class="overlay-text">
+    Spring onions make tasty dishes but are also high in nutrients and are packed with vital vitamins and minerals.
+  </div>
+</div>
+<div class="full-width-example">
+  <h1>1. Prevents Cold And Flu</h1>
+ <p>
+  As it has antibacterial and antiviral properties, it is an excellent medicine to treat viral and flu infections. It also reduces excess mucus and fights against the winter cold, making you feel miserable.
+ </p>
+</div>
+</body>
+</html>
