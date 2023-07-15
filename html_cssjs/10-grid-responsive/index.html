@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9 | layout and responsive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        line-height: 1.6;
+      }
+      .container {
+        display: grid;
+        height: 100vh;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 1.5fr 1.2fr 0.2fr;
+        grid-template-areas:
+        "header header header header"
+        "sidebar main main main"
+        "footer footer footer footer"
+        ;
+        gap: 0.2rem;
+
+      }
+      .header {
+        grid-area: header;
+        /* center the content */
+        display: grid;
+        /* center both horizontal and verticaly */
+        /* place-items: center; */
+        /* center vertically */
+        align-content: center;
+        /* center horizontaly */
+        justify-content: center;
+        background-color: aliceblue;
+      }
+      .main {
+        grid-area: main;
+        grid-row: 2/4;
+        background-color: #f4f4f4;
+        /* center the content */
+        display: grid;
+        align-content: center;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        grid-row: 2/4;
+        display: grid;
+        place-items: center;
+        background-color: lightgray;
+      }
+      .footer {
+        grid-area: footer;
+        grid-row: 4/5;
+        /* center content */
+        display: grid;
+        place-items: center;
+        background-color: blanchedalmond;
+      }
+
+      @media only screen and (max-width:550px) {
+        .container {
+          grid-template-columns: 1fr;
+          grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+          grid-template-areas:
+          "header"
+          "sidebar"
+          "main"
+          "footer"
+          ;
+        }
+        .sidebar {
+          grid-row: 2/3;
+        }
+        .main {
+          grid-row: 3/6;
+        }
+        .footer {
+          grid-row: 6/7;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <p>This is header group</p>
+      </div>
+      <div class="main">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+      </div>
+      <div class="sidebar">
+        <p>This is has useful links and content</p>
+      </div>
+      <div class="footer">
+        <p>&copy; 2021</p>
+      </div>
+    </div>
+  </body>
+</html>

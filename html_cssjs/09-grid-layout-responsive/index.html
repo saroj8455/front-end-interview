@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 9 | layout and responsive</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&family=Noto+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: 'Inter', sans-serif;
+        font-family: 'Noto Sans', sans-serif;
+        line-height: 1.6;
+      }
+      /* design the layout */
+      @media(min-width:850px) {
+        .layout {
+          /* design the layout */
+          display: grid;
+          grid-template-columns: 1fr 2, 5fr;
+          grid-template-areas:
+            'header header'
+            'sidebar main'
+            'sidebar footer';
+        }
+      }
+      .header {
+        grid-area: header;
+        align-self: start;
+        background-color: rgb(113, 113, 175);
+        color: #fff;
+        padding: 20px;
+      }
+      .sidebar {
+        grid-area: sidebar;
+        background-color: #ddd;
+        font-size: 0.8rem;
+        color: #999;
+        padding: 20px;
+      }
+      .main {
+        grid-area: main;
+        padding: 20px;
+        line-height: 1.7;
+      }
+      .footer {
+        grid-area: footer;
+        align-self: end;
+        background-color: rgb(77, 77, 77);
+        color: #fff;
+        padding: 15px;
+      }
+      /* responsive example without media query */
+      .responsive__example {
+        max-width: 90%;
+        margin: 20px auto;
+        /* prepoerties for responsive grid */
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+      }
+      .responsive__item {
+        background-color: rgb(204, 247, 230);
+        padding: 20px;
+        border-radius: 4px;
+        color: rgb(90, 145, 123);
+        font-size: 0.77rem;
+        line-height: 1.7;
+        overflow: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <div class="header">This is the header</div>
+      <div class="main">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur
+          repellat, sequi aliquid praesentium culpa consequatur temporibus.
+          Quidem incidunt, ullam asperiores esse sunt impedit saepe corporis quo
+          provident doloribus deleniti quas.
+        </p>
+      </div>
+      <div class="sidebar">
+        <p>This is has useful links and content</p>
+      </div>
+      <div class="footer">
+        <p>&copy; 2021</p>
+      </div>
+    </div>
+    <!-- responsive example -->
+    <div class="responsive__example">
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+      <div class="responsive__item">
+        Our comprehensive guide to CSS flexbox layout. This complete guide explains everything about flexbox, focusing on all the different possible properties for the parent element (the flex container) and the child elements (the flex items). It also includes history, demos, patterns, and a browser support chart.
+      </div>
+    </div>
+  </body>
+</html>
