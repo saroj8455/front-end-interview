@@ -10,12 +10,16 @@ import { ExamNavComponent } from './components/exam-nav/exam-nav.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MaterialModule } from './shared/material/material.module';
+import { ParentComponent } from './components/parent/parent.component';
+import { ChildComponent } from './components/child/child.component';
 @NgModule({
   declarations: [
     AppComponent,
     NavComponent,
     ExamNavComponent,
-    DashboardComponent
+    DashboardComponent,
+    ParentComponent,
+    ChildComponent
   ],
   imports: [
     BrowserModule,
