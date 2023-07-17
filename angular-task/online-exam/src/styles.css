@@ -14,7 +14,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 }
 .product-card-container {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 30px auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -23,9 +23,44 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-
 }
 .example-card {
   max-width: 400px;
+  padding: 20px;
+}
+
+mat-card img {
+  height: 150px;
+  width: 150px;
+  object-fit: contain;
+  /* center the image using flex properties*/
+  /*align-self: center;*/
+  /* center the image using margin properties*/
+  margin: 15px auto;
+}
+
+.action-button{
+  display: flex !important;
+  align-self: center;
+  gap: 15px;
+}
+
+
+.item-card-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  gap: 15px;
+}
+
+.item-card {
+  max-width: 400px;
+  padding: 20px;
 }
 
 .example-header-image {
   background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
   background-size: cover;
 }
+

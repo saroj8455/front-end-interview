@@ -19,6 +19,7 @@ export class ParentComponent implements AfterViewInit{
   greetMessageFromChild: string | undefined;
   receiveMessageOutput = '';
   @ViewChild(ChildComponent) childComp!:ChildComponent;
+  avatarUrl = "https://material.angular.io/assets/img/examples/shiba1.jpg"
 
   constructor() {
     console.log('constructor called')

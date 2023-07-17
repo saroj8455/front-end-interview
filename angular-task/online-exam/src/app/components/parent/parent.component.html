@@ -1,5 +1,9 @@
 <mat-card class="example-card">
   <mat-card-header>
+    <div mat-card-avatar [ngStyle]="{
+    'backgroundImage':'url('+avatarUrl+')',
+    'backgroundSize': 'cover'
+    }"></div>
     <mat-card-title>Parent Component</mat-card-title>
     <mat-card-subtitle>parent child communication</mat-card-subtitle>
   </mat-card-header>
