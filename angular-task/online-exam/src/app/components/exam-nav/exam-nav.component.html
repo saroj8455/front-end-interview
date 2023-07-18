@@ -1,8 +1,8 @@
 <mat-sidenav-container class="sidenav-container">
   <mat-sidenav #drawer class="sidenav" fixedInViewport
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'push' : 'side'"
-      [opened]="(isHandset$ | async) === true">
+               [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+               [mode]="(isHandset$ | async) ? 'push' : 'side'"
+               [opened]="(isHandset$ | async) === true">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
       <a mat-list-item href="#">Link 1</a>
@@ -20,9 +20,23 @@
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>online-exam</span>
+      <span>Online Exam System</span>
+      <span class="example-spacer"></span>
+      <button routerLink="home" mat-raised-button color="primary">Home</button>
+      <button routerLink="about" mat-raised-button color="primary">About</button>
+      <button routerLink="contact" mat-raised-button color="primary">Contact</button>
+      <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+        <mat-icon>favorite</mat-icon>
+      </button>
+      <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
+        <mat-icon>share</mat-icon>
+      </button>
     </mat-toolbar>
     <!-- Add Content Here -->
-    <app-dashboard></app-dashboard>
+    <!--    place router outlet or dashboard component-->
+    <!--    <app-dashboard></app-dashboard>-->
+    <div class="main-container">
+      <router-outlet></router-outlet>
+    </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
