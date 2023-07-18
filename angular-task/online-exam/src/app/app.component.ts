@@ -17,6 +17,7 @@ export class AppComponent implements OnInit{
   }
 
 
+  // implement parent child communication
   ngOnInit(): void {
     console.log('App component initialized');
     // this is where you can initialize your app components and services

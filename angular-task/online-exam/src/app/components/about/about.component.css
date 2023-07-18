@@ -1,0 +1,26 @@
+section {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  padding: 15px;
+  margin: 15px auto;
+}
+
+section h1 {
+  color: darkgreen;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 15px auto;
+  padding: 15px;
+  border-bottom: 4px dotted red;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.image-container img {
+  height: 400px;
+}

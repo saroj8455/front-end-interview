@@ -1,0 +1,25 @@
+<mat-card class="example-card">
+  <mat-card-header>
+    <div mat-card-avatar [ngStyle]="{
+    'backgroundImage':'url('+avatarUrl+')',
+    'backgroundSize': 'cover'
+    }"></div>
+    <mat-card-title>Parent Component</mat-card-title>
+    <mat-card-subtitle>parent child communication</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content>
+    <p>
+      Message via @ViewChild decorator <br>
+      {{greetMessageFromChild}}
+    </p>
+    <p>Receive using @output decorator {{receiveMessageOutput}}</p>
+    <p>
+    Transform Message using PIPE <span>{{message|uppercase }}</span>
+    </p>
+  </mat-card-content>
+  <mat-card-actions>
+    <button mat-button>Help</button>
+  </mat-card-actions>
+</mat-card>
+<app-child [incomingMessage] = "message" (outgoingMessage)="receiveMessage($event)"></app-child>
+
