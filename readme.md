@@ -42,3 +42,5 @@ here fix an image inside a div
 
 ## day -10 layout and grid and place items to center
 ![Alt text](image-9.png)
+
+## day -11 center element using grid and flex
