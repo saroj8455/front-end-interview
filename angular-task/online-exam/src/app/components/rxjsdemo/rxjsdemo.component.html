@@ -1,0 +1,9 @@
+<div class="user-container" *ngIf="customers$">
+  <mat-card class="user-card" *ngFor="let customer of customers$ | async">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{ customer.name }}</mat-card-title>
+      <mat-card-subtitle>{{ customer.email }}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+</div>
