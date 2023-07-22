@@ -7,7 +7,6 @@
 /bazel-out
 
 # Existing Project
-/nodejs-task/*
 /react-task/*
 
 # Node
