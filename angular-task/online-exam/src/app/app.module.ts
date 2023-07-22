@@ -16,6 +16,7 @@ import { HomeComponent } from './components/home/home.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
+import { RxjsdemoComponent } from './components/rxjsdemo/rxjsdemo.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { PageNotFoundComponent } from './components/page-not-found/page-not-foun
     HomeComponent,
     AboutComponent,
     ContactComponent,
-    PageNotFoundComponent
+    PageNotFoundComponent,
+    RxjsdemoComponent
   ],
   imports: [
     BrowserModule,

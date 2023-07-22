@@ -1,0 +1,21 @@
+.user-container {
+  max-width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  align-self: center;
+  gap: 15px;
+}
+
+.user-card {
+  min-width: 400px;
+  height: auto;
+  padding: 20px;
+}
+
+.example-header-image {
+  background-image: url('https://img.freepik.com/free-photo/portrait-white-man-isolated_53876-40306.jpg?w=996&t=st=1689947367~exp=1689947967~hmac=2365fe9758f2c99f68592f06d370443094fe925b680c1da7b26687e034d47ab2');
+  background-size: cover;
+}
