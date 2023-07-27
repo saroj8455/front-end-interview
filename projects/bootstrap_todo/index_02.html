@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App</title>
+  <!-- Add Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Add your custom CSS file here if needed -->
+  <style>
+    :root {
+      --blue: #007bff;
+      --indigo: #6610f2;
+      --purple: #6f42c1;
+      --pink: #e83e8c;
+      --red: #dc3545;
+      --orange: #fd7e14;
+      --yellow: #ffc107;
+      --green: #28a745;
+      --teal: #20c997;
+      --cyan: #17a2b8;
+      --white: #fff;
+      --gray: #6c757d;
+      --gray-dark: #343a40;
+      --primary: #007bff;
+      --secondary: #6c757d;
+      --success: #28a745;
+      --info: #17a2b8;
+      --warning: #ffc107;
+      --danger: #dc3545;
+      --light: #f8f9fa;
+      --dark: #343a40;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container mt-4">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <!-- Quiz Card -->
+        <div class="card">
+          <div class="card-header">
+            <h4 class="text-center">Quiz Title</h4>
+          </div>
+          <div class="card-body">
+            <!-- Question 1 -->
+            <h5>Question 1:</h5>
+            <p>What is the capital of France?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1a1" value="a1">
+              <label class="form-check-label" for="q1a1">Option 1</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q1" id="q1a2" value="a2">
+              <label class="form-check-label" for="q1a2">Option 2</label>
+            </div>
+            <!-- Add more options for Question 1 as needed -->
+
+            <!-- Question 2 -->
+            <h5>Question 2:</h5>
+            <p>What is 2 + 2?</p>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2a1" value="a1">
+              <label class="form-check-label" for="q2a1">Option 1</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2a2" value="a2">
+              <label class="form-check-label" for="q2a2">Option 2</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2a3" value="a1">
+              <label class="form-check-label" for="q2a3">Option 3</label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="q2" id="q2a4" value="a2">
+              <label class="form-check-label" for="q2a4">Option 4</label>
+            </div>
+            <!-- Add more options for Question 2 as needed -->
+
+            <!-- Add more questions as needed -->
+
+            <!-- Submit Button -->
+            <div class="text-center mt-4">
+              <button class="btn btn-primary" id="submitQuiz">Submit</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Add Bootstrap and any other JS dependencies -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Add your custom JS file here if needed -->
+</body>
+
+</html>
